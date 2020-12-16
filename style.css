@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f4eb;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: inherit;
+}
+
+#hero {
+  position: absolute;
+  width: 842px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 100px;
+}
+
+p.temp {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#title {
+  margin-bottom: 50px;
+}
+
+#framedImg {
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#framedImg:before {
+  content: url("assets/PictureFrame.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pictureFrame {
+  width: 842px;
+  height: 435px;
+}
+
+#fk {
+  margin-top: 10px;
+}
+
+/* Nav */
+nav {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+
+#MenuFrame {
+  width: 735px;
+  height: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.menuBtn {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+}
+
+.menuBtn:active {
+  filter: none;
+  top: 52%;
+}
+
+.prev {
+ filter: drop-shadow(0 5px 3px #7e7e7e);
+ left: -5px;
+ transform: translateY(-50%);
+}
+
+.next {
+  filter: drop-shadow(0 5px 3px #7e7e7e);
+  right: -5px;
+  transform: rotateY(180deg) translateY(-50%);
+}
+
+/* Slider */
+.navImg {
+  width: 735px;
+  height: 160px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.slider-list {
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+.slider-item {
+  width: 245px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.slider-item1 {
+  background: #7fa998;
+}
+.slider-item2 {
+  background: #f1f1b0;
+}
+.slider-item3 {
+  background: #df8543;
+}
+.slider-item4 {
+  background: #b343df;
+}
+.slider-item5 {
+  background: #4360df;
+}
+.prev-next-box {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.prev-next-box p {
+  background: #c9485b;
+  color: #fff;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 6px;
+  font-size: 20px;
+}
+.prev-next-box p:hover {
+  cursor: pointer;
+}
+
+/* Easter Egg */
+a.easterEgg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  /* transition: ease-in 2s; */
+}
+/* opacity doesn't apply for background-image cus bi isn't an element */
